@@ -46,7 +46,7 @@ Probably, it will require to install dependencies first:
 > install.packages('plyr', 'reshape2')
 ``z
 
-## Describtion
+## Description
 
 Script fetches original if it doesn't exists yet.
 Extracts it.
