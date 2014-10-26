@@ -19,26 +19,40 @@ Constructed using the following:
 
 ```R
 > version
-platform       x86_64-apple-darwin12.4.0
+               _
+platform       x86_64-apple-darwin13.1.0
 arch           x86_64
-os             darwin12.4.0
-system         x86_64, darwin12.4.0
+os             darwin13.1.0
+system         x86_64, darwin13.1.0
 status
 major          3
-minor          0.1
-year           2013
-month          05
-day            16
-svn rev        62743
+minor          1.1
+year           2014
+month          07
+day            10
+svn rev        66115
 language       R
-version.string R version 3.0.1 (2013-05-16)
-nickname       Good Sport
+version.string R version 3.1.1 (2014-07-10)
+nickname       Sock it to Me
 ```
 
 ##  Running
 
-```bash
-$ Rscript run_analysis.R
 ```
+$ ./run_analysis.R
+```
+Probably, it will require to install dependencies first:
+```$ R
+> install.packages('plyr', 'reshape2')
+``z
 
-Yields tidy.txt & tidy.mean.txt.
+## Describtion
+
+Script fetches original if it doesn't exists yet.
+Extracts it.
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement.
+Uses descriptive activity names to name the activities in the data set.
+Appropriately labels the data set with descriptive activity names.
+Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Writes tidy.mean.txt and tidy.txt CSV files.

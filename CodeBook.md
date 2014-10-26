@@ -1,22 +1,28 @@
 ## Code Book
 
-For the provided UCI HAR Dataset the following vars are set from run_analysis.R.  See the [README](README.md) for additional details.
+
+This is a codebook for output dataset created by run_analysis.R script. See the [README](README.md) for additional details.
 
 ### Tidy Mean
 
-A data.table named `tidy.mean` is set with the following columns.  All units are maintained from the original data set. A file named tidy.mean.txt is written from run_analysis.R.
+A data.table named `tidy.mean` consists of three columns:
+- Subject (integer)  -- is identifier for the study subject
+- Activity (factor) -- Type of activity performed by subject, should be one of:
+ - LAYING
+ - SITTING
+ - STANDING
+ - WALKING
+ - WALKING_DOWNSTAIRS
+ - WALKING_UPSTAIRS
+- MeanSamples (numberic) -- mean of variables by Subject + Activity
 
-| column       | description                                              | type    |
-| ------------ | -------------------------------------------------------- | ------- |
-| Subject      | Identifier of the subject                                | integer |
-| Activity     | Label of the activity                                    | factor  |
-| MeanSamples  | Mean of variables by Subject + Activity provided in tidy | numeric |
+All units are maintained from the original data set. A file named tidy.mean.txt is written from run_analysis.R.
 
 ### Tidy
 
 A data.table named `tidy` is set with the following columns.  All units are maintained from the original data set. A file named tidy.txt is written from run_analysis.R.
 
-| Column                       | Original Name               |
+| Tidy Name                    | Original Name               |
 | ---------------------------- | --------------------------- |
 | Activity                     |                             |
 | Subject                      |                             |
