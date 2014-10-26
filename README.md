@@ -11,8 +11,8 @@ Source dataset https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUC
 
 ## Notes
 
-*  Only vaiables containing mean() & std() are used.
-*  Requires the plyr & reshape2 packages.
+*  Only vaiables containing mean() and std() are used.
+*  Requires the plyr and reshape2 packages.
 *  Assumes the dataset is unzipped in the current directory.
 
 Constructed using the following:
