@@ -43,7 +43,8 @@ $ ./run_analysis.R
 ```
 Probably, it will require to install dependencies first:
 
-```$ R
+```
+$ R
 > install.packages('plyr', 'reshape2')
 ```
 
